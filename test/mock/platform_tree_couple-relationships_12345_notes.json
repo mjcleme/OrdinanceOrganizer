@@ -1,0 +1,46 @@
+{
+  "relationships" : [ {
+    "id" : "12345",
+    "links" : {
+      "relationship" : {
+        "href" : "https://familysearch.org/platform/tree/couple-relationships/12345",
+        "title" : "Couple Relationship"
+      }
+    },
+    "notes" : [ {
+      "id" : "1804317705",
+      "links" : {
+        "note" : {
+          "href" : "https://familysearch.org/platform/tree/couple-relationships/12345/notes/1804317705",
+          "title" : "Couple Relationship Note"
+        }
+      },
+      "subject" : "note 0",
+      "text" : "text",
+      "attribution" : {
+        "contributor" : {
+          "resource" : "https://sandbox.familysearch.org/platform/users/agents/MMD8-3NT",
+          "resourceId" : "MMD8-3NT"
+        },
+        "modified" : 1403312322000
+      }
+    }, {
+      "id" : "1805241226",
+      "links" : {
+        "note" : {
+          "href" : "https://familysearch.org/platform/tree/couple-relationships/12345/notes/1805241226",
+          "title" : "Couple Relationship Note"
+        }
+      },
+      "subject" : "note 1",
+      "text" : "text",
+      "attribution" : {
+        "contributor" : {
+          "resource" : "https://sandbox.familysearch.org/platform/users/agents/MMD8-3NT",
+          "resourceId" : "MMD8-3NT"
+        },
+        "modified" : 1403312322000
+      }
+    } ]
+  } ]
+}

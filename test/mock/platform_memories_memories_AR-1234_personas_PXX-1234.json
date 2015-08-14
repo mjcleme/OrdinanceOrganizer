@@ -1,0 +1,40 @@
+{
+  "persons" : [ {
+    "id" : "PXX-1234",
+    "links" : {
+      "persona" : {
+        "href" : "https://familysearch.org/platform/memories/memories/AR-1234/personas/PXX-1234",
+        "title" : "Memory Persona"
+      }
+    },
+    "extracted" : true,
+    "media" : [ {
+      "id" : "T123",
+      "links" : {
+        "media-reference" : {
+          "href" : "https://familysearch.org/platform/memories/memories/AR-1234/personas/PXX-1234/artifact-references/T123",
+          "title" : "Memory Artifact Reference"
+        }
+      },
+      "qualifiers" : [ {
+        "name" : "http://gedcomx.org/RectangleRegion",
+        "value" : ".10,.10,1.00,1.00"
+      } ],
+      "description" : "https://familysearch.org/platform/memories/artifacts/132692/description"
+    } ],
+    "names" : [ {
+      "nameForms" : [ {
+        "fullText" : "Anastasia Aleksandrova"
+      } ]
+    } ]
+  } ],
+  "sourceDescriptions" : [ {
+    "id" : "AR-1234",
+    "links" : {
+      "memory" : {
+        "href" : "https://familysearch.org/platform/memories/memories/AR-1234",
+        "title" : "Memory"
+      }
+    }
+  } ]
+}

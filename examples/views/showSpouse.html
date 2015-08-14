@@ -1,0 +1,12 @@
+<table class="table-striped" style="margin-top:20px">
+<thead>
+ <tr>
+  <th>Full Name</th>
+  <th>Reference #</th>
+ </tr>
+</thead>
+<tr ng-repeat="x in persons" ng-if="!x.sealingToSpouse[0].completed && x.sealingToSpouse[0].readyForTrip">
+        <td>{{ x.qualification.name.fullText }}</td>    
+        <td>{{ x.ref }}</td>
+</tr>
+</table>

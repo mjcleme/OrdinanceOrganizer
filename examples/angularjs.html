@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="//rootsdev.org/familysearch-javascript-sdk/familysearch-javascript-sdk.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+  <script src="angularjs.js"></script>
+</head>
+<body ng-app="OrdinanceApp">
+<div class="container" ng-controller="DemoCntl">
+	
+	<div class="page-header">
+		<button style="position:absolute"  class="btn-primary" ng-show="!loggedIn" ng-click="run()">Login to FamilySearch</button>
+		<button style="position:absolute" class="btn-danger" ng-show="loggedIn" ng-click="logout()">Logout</button>
+		<h1 class="text-center">Ordinance Organizer</h1>
+		<img src="http://myctrring.com/wp-content/uploads/2009/03/draper_temple_clipart.jpg" style="float:right;height:80px;width:55px;margin-top:-80px">		
+	</div> 
+
+  <p style="float:right">{{ userName }}</p>
+  <div ng-show="loggedIn">
+	<div ng-include="'views/selectOrdinance.html'"></div>
+  </div>	
+  <div ng-switch on="contents">
+	<div ng-switch-when="baptism">
+		<div ng-include="'views/showBaptisms.html'"></div>
+	</div>
+	<div ng-switch-when="initiatory">
+		<div ng-include="'views/showInitiatories.html'"></div>
+ 	</div>
+	<div ng-switch-when="endowment">
+	 	<div ng-include="'views/showEndowments.html'"></div>
+	</div>
+	<div ng-switch-when="spouse">
+		<div ng-include="'views/showSpouse.html'"></div>
+	</div>
+	<div ng-switch-when="parent">
+		<div ng-include="'views/showParent.html'"></div>
+	</div>
+	<div ng-switch-when="confirmation">
+		<div ng-include="'views/showConfirmation.html'"></div>
+	</div>
+	<div ng-switch-default></div>	 	
+  </div>
+
+</div>
+</body>
+</html>
